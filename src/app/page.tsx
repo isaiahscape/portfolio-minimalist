@@ -36,6 +36,7 @@ export default function Home() {
             transition={{duration: 0.2}}
           >
             <Bio />
+            <Projects />
           </motion.section>
         </TabsContent>
         <TabsContent value="skills">
