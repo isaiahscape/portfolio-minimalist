@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/ProfilePrint' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/ProfilePrint/' : '',
   basePath: process.env.NODE_ENV === 'production' ? '/ProfilePrint' : '',
 };
 
