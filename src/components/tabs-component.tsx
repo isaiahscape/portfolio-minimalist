@@ -15,7 +15,7 @@ export function TabsComponent() {
         <TabsTrigger value="projects">Projects</TabsTrigger>
         <TabsTrigger value="skills">Skills</TabsTrigger>
         <TabsTrigger value="contact">Contact</TabsTrigger>
-        <TabsTrigger value="social">Social Media</TabsTrigger>
+        <TabsTrigger value="social">Socials</TabsTrigger>
       </TabsList>
       <TabsContent value="bio" className="space-y-4">
         <section id="bio">

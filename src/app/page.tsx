@@ -24,7 +24,7 @@ export default function Home() {
           <TabsTrigger value="about">About &amp; Projects</TabsTrigger>
           <TabsTrigger value="skills">Skills</TabsTrigger>
           <TabsTrigger value="contact">Contact</TabsTrigger>
-          <TabsTrigger value="social">Social Media</TabsTrigger>
+          <TabsTrigger value="social">Socials</TabsTrigger>
         </TabsList>
         <TabsContent value="about">
           <motion.section
@@ -36,7 +36,6 @@ export default function Home() {
             transition={{duration: 0.2}}
           >
             <Bio />
-            <Projects />
           </motion.section>
         </TabsContent>
         <TabsContent value="skills">
