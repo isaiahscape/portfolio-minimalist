@@ -1,12 +1,13 @@
 'use client';
 
 import {Card, CardContent, CardDescription, CardHeader, CardTitle} from '@/components/ui/card';
-import {Github, Linkedin, Mail, MessageSquare, Twitch, Youtube, Instagram} from 'lucide-react';
+import {Github, Linkedin, Mail, MessageSquare, Twitch, Twitter, Youtube, Instagram} from 'lucide-react';
 
 const contactInfo = {
   youtube: 'https://youtube.com/@isaiahscape',
   twitch: 'https://twitch.tv/isaiahscape',
   instagram: 'https://instagram.com/isaiahscape',
+  twitter: 'https://twitter.com/isaiahscape',
   telegram: 'https://t.me/thescapenetwork',
   github: 'https://github.com/isaiahscape',
   linkedin: 'https://linkedin.com/in/isaiahscape',
@@ -32,6 +33,14 @@ const socialMediaPosts = [
     description: 'Catch me live on Twitch!',
   },
   {
+    title: 'Twitter',
+    username: '@isaiahscape',
+    link: contactInfo.twitter,
+    icon: Twitter,
+    color: '#1DA1F2',
+    description: 'Follow me on Twitter for updates and thoughts!',
+  },
+  {
     title: 'Instagram',
     username: '@isaiahscape',
     link: contactInfo.instagram,
@@ -54,7 +63,7 @@ const socialMediaPosts = [
 export function SocialMedia() {
   return (
     <div className="grid gap-4">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {socialMediaPosts.map((post, index) => (
           <Card key={index} className="overflow-hidden">
             <CardHeader className="p-0">
