@@ -4,7 +4,7 @@ import {Github, Linkedin, Mail} from 'lucide-react';
 import {ThemeToggle} from '@/components/theme-provider';
 
 const socialMedia = {
-  email: 'youremail@example.com',
+  email: 'isaiahscape@duck.com',
   github: 'https://github.com/yourgithub',
   linkedin: 'https://linkedin.com/in/yourlinkedin',
 };
@@ -13,7 +13,7 @@ export function TopNavigation() {
   return (
     <nav className="flex items-center justify-center mb-8">
       <div className="text-xl font-bold mr-4">Leonardo</div>
-      <div className="flex items-center space-x-4">
+      <div className="flex items-center space-x-4 justify-center">
         <a href={`mailto:${socialMedia.email}`} className="hover:text-primary">
           <Mail className="h-5 w-5" />
         </a>
@@ -38,3 +38,4 @@ export function TopNavigation() {
     </nav>
   );
 }
+
