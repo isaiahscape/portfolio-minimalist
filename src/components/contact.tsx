@@ -1,7 +1,7 @@
 'use client';
 
 import {Card, CardContent, CardDescription, CardHeader, CardTitle} from '@/components/ui/card';
-import {Github, Linkedin, Mail, MessageSquare, Twitch, Youtube, Instagram} from 'lucide-react';
+import {Github, Linkedin, Mail, MessageSquare} from 'lucide-react';
 
 const contactInfo = {
   messenger: 'https://messenger.com/t/isaiahscape',
@@ -53,30 +53,6 @@ const contactMethods = [
     icon: Github,
     color: '#333',
     description: 'Explore my projects and contributions on GitHub!',
-  },
-  {
-    title: 'YouTube',
-    username: '@isaiahscape',
-    link: `https://youtube.com/@isaiahscape`,
-    icon: Youtube,
-    color: '#FF0000',
-    description: 'Subscribe to my YouTube channel!',
-  },
-  {
-    title: 'Twitch',
-    username: '@isaiahscape',
-    link: `https://twitch.tv/isaiahscape`,
-    icon: Twitch,
-    color: '#9146FF',
-    description: 'Catch me live on Twitch!',
-  },
-  {
-    title: 'Instagram',
-    username: '@isaiahscape',
-    link: `https://instagram.com/isaiahscape`,
-    icon: Instagram,
-    color: '#E4405F',
-    description: 'Follow my daily life on Instagram!',
   },
 ];
 

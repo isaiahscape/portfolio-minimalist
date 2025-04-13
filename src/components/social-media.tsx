@@ -1,7 +1,7 @@
 'use client';
 
 import {Card, CardContent, CardDescription, CardHeader, CardTitle} from '@/components/ui/card';
-import {Github, Instagram, Linkedin, Mail, Twitch, Youtube} from 'lucide-react';
+import {Github, Linkedin, Mail, MessageSquare, Twitch, Youtube, Instagram} from 'lucide-react';
 
 const contactInfo = {
   youtube: 'https://youtube.com/@isaiahscape',
@@ -78,4 +78,3 @@ export function SocialMedia() {
     </div>
   );
 }
-
