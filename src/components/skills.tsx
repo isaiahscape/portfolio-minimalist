@@ -12,10 +12,6 @@ const skills = [
     description: 'Experienced in managing and growing social media presence for brands.',
   },
   {
-    skill: 'Web Developer',
-    description: 'Skilled in building and maintaining responsive and user-friendly websites.',
-  },
-  {
     skill: 'Graphic designer, for myself',
     description: 'Creating graphics and designs for personal projects.',
   },
