@@ -15,6 +15,34 @@ const skills = [
     skill: 'Web Developer',
     description: 'Skilled in building and maintaining responsive and user-friendly websites.',
   },
+  {
+    skill: 'Graphic designer, for myself',
+    description: 'Creating graphics and designs for personal projects.',
+  },
+  {
+    skill: 'ROM maintainer, sometimes',
+    description: 'Maintaining and updating custom ROMs.',
+  },
+  {
+    skill: 'Singing, doing tech stuffs',
+    description: 'Combining technical skills with singing.',
+  },
+  {
+    skill: 'Streaming on Twitch / Tiktok, some random clips on YouTube',
+    description: 'Streaming content on various platforms.',
+  },
+  {
+    skill: 'Web developer, still learning other languages and stuffs',
+    description: 'Continuously learning and improving web development skills.',
+  },
+  {
+    skill: 'Working student, maybe?',
+    description: 'Balancing work and studies.',
+  },
+  {
+    skill: 'Gadget fixer, idk I fix those.',
+    description: 'Repairing and troubleshooting gadgets.',
+  },
 ];
 
 export function Skills() {
