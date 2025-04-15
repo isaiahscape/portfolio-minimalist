@@ -45,7 +45,7 @@ export function Skills() {
   return (
     <div className="grid gap-4">
       <h2 className="text-2xl font-bold">Skills</h2>
-      <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-1">
+      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {skills.map((skill, index) => (
           <Card key={index}>
             <CardHeader>
