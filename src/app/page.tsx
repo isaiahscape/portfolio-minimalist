@@ -19,7 +19,7 @@ export default function Home() {
       transition={{duration: 0.3}}
     >
       <TopNavigation />
-      <Tabs defaultValue="about" className="w-full">
+      <Tabs defaultValue="about" className="w-full flex flex-col items-center justify-start min-h-screen">
         <TabsList className="space-x-2">
           <TabsTrigger value="about">About &amp; Projects</TabsTrigger>
           <TabsTrigger value="skills">Skills</TabsTrigger>

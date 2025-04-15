@@ -3,7 +3,10 @@
 import {Card, CardContent, CardDescription, CardHeader, CardTitle} from '@/components/ui/card';
 
 export function Bio() {
-  const bio = `A passionate and versatile professional with a diverse skill set.`;
+  const bio = [
+    "This is Isaiah, a web developer that can do dumbshit in Android OS development.",
+    "I made a lot"
+  ];
 
   const moreInfos = [
     'Graphic designer, for myself',
@@ -18,7 +21,8 @@ export function Bio() {
   const facts = [
     "I love cats and dogs, they're adorable.",
     "I'm nonchalant, yet energetic if we matched our persona or maybe humor. I get tired of talking if we don't match.",
-    'I can teach any tech-related stuffs, especially on computer, phones, some programming languages that I know of, media-related stuff (photography and cinematography), audiophile, technical and some gadgets that I know.',
+    "I can teach any tech-related stuffs, especially on computer, phones, some programming languages that I know of, ",
+    "Media-related stuff (photography and cinematography), audiophile, technical and some gadgets that I know.",
     "Human psychology is my thing, you can't manipulate me at any circumstances. I don't bite though.",
     "I don't tolerate people who does something terrible. If you're doing something that I can't bear of, GTFO.",
   ];
@@ -56,74 +60,73 @@ export function Bio() {
   ];
 
   return (
-    <div className="grid gap-4">
-      <Card className="grid gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+      <Card className="col-span-1 md:col-span-2 lg:col-span-5">
         <CardHeader>
           <CardTitle>About Me</CardTitle>
         </CardHeader>
         <CardContent>
-          <CardDescription className="text-muted-foreground">
-            <div className="flex items-center space-x-2">
-              <span className="text-green-500">+</span>
-              <span>Summary:</span>
-            </div>
-            <div className="ml-4">{bio}</div>
-            <div className="mt-4">
-              <div className="flex items-center space-x-2">
-                <span className="text-green-500">+</span>
-                <span>More Infos:</span>
-              </div>
-              <ul className="list-disc ml-8">
-                {moreInfos.map((info, index) => (
-                  <li key={index}>{info}</li>
-                ))}
-              </ul>
-            </div>
-            <div className="mt-4">
-              <div className="flex items-center space-x-2">
-                <span className="text-green-500">+</span>
-                <span>Facts about me:</span>
-              </div>
-              <ul className="list-disc ml-8">
-                {facts.map((fact, index) => (
-                  <li key={index}>{fact}</li>
-                ))}
-              </ul>
-            </div>
-            <div className="mt-4">
-              <div className="flex items-center space-x-2">
-                <span className="text-green-500">+</span>
-                <span>Roles:</span>
-              </div>
-              <ul className="list-disc ml-8">
-                {roles.map((role, index) => (
-                  <li key={index}>{role}</li>
-                ))}
-              </ul>
-            </div>
-            <div className="mt-4">
-              <div className="flex items-center space-x-2">
-                <span className="text-green-500">+</span>
-                <span>The line-up of devices I used:</span>
-              </div>
-              <ul className="list-disc ml-8">
-                {devices.map((device, index) => (
-                  <li key={index}>{device}</li>
-                ))}
-              </ul>
-            </div>
-            <div className="mt-4">
-              <div className="flex items-center space-x-2">
-                <span className="text-green-500">+</span>
-                <span>In-ear Monitors:</span>
-              </div>
-              <ul className="list-disc ml-8">
-                {inEarMonitors.map((iem, index) => (
-                  <li key={index}>{iem}</li>
-                ))}
-              </ul>
-            </div>
-          </CardDescription>
+          <CardDescription className="text-muted-foreground">{bio}</CardDescription>
+        </CardContent>
+      </Card>
+      <Card>
+        <CardHeader>
+          <CardTitle>What are my hobbies?</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <ul className="list-disc list-inside">
+            {moreInfos.map((info, index) => (
+              <li key={index}>{info}</li>
+            ))}
+          </ul>
+        </CardContent>
+      </Card>
+      <Card>
+        <CardHeader>
+          <CardTitle>Facts</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <ul className="list-disc list-inside">
+            {facts.map((fact, index) => (
+              <li key={index}>{fact}</li>
+            ))}
+          </ul>
+        </CardContent>
+      </Card>
+      <Card>
+        <CardHeader>
+          <CardTitle>Roles</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <ul className="list-disc list-inside">
+            {roles.map((role, index) => (
+              <li key={index}>{role}</li>
+            ))}
+          </ul>
+        </CardContent>
+      </Card>
+      <Card>
+        <CardHeader>
+          <CardTitle>Devices</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <ul className="list-disc list-inside">
+            {devices.map((device, index) => (
+              <li key={index}>{device}</li>
+            ))}
+          </ul>
+        </CardContent>
+      </Card>
+      <Card>
+        <CardHeader>
+          <CardTitle>In-ear Monitors</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <ul className="list-disc list-inside">
+            {inEarMonitors.map((iem, index) => (
+              <li key={index}>{iem}</li>
+            ))}
+          </ul>
         </CardContent>
       </Card>
     </div>

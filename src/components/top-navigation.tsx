@@ -11,9 +11,9 @@ const socialMedia = {
 
 export function TopNavigation() {
   return (
-    <nav className="flex items-center justify-center mb-8">
-      <div className="text-xl font-bold mr-4">Leonardo</div>
-      <div className="flex items-center space-x-4 justify-center">
+    <nav className="flex items-center mb-8">
+      <div className="text-xl font-bold mr-auto">Leonardo</div>
+      <div className="flex items-center space-x-4 justify-end ">
         <a href={`mailto:${socialMedia.email}`} className="hover:text-primary">
           <Mail className="h-5 w-5" />
         </a>

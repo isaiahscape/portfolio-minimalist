@@ -32,7 +32,7 @@ export function ThemeToggle() {
       <motion.div
         initial={{opacity: 0, rotate: theme === 'dark' ? 180 : 0}}
         animate={{opacity: 1, rotate: theme === 'dark' ? 0 : 180}}
-        transition={{duration: 0.2}}
+        transition={{duration: 0.4}}
         style={{position: 'absolute'}}
       >
         <Moon className="h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
