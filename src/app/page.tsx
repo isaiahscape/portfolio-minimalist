@@ -20,8 +20,9 @@ export default function Home() {
     >
       <TopNavigation />
       <Tabs defaultValue="about" className="w-full flex flex-col items-center justify-start min-h-screen">
-        <TabsList className="space-x-2">
-          <TabsTrigger value="about">About &amp; Projects</TabsTrigger>
+        <TabsList className="space-x-2 justify-center">
+          <TabsTrigger value="about">About</TabsTrigger>
+          <TabsTrigger value="projects">Projects</TabsTrigger>
           <TabsTrigger value="skills">Skills</TabsTrigger>
           <TabsTrigger value="contact">Contact</TabsTrigger>
           <TabsTrigger value="social">Socials</TabsTrigger>
@@ -36,6 +37,17 @@ export default function Home() {
             transition={{duration: 0.2}}
           >
             <Bio />
+          </motion.section>
+        </TabsContent>
+        <TabsContent value="projects">
+          <motion.section
+            id="projects"
+            className="motion-safe:transition-opacity motion-safe:duration-500"
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            exit={{opacity: 0}}
+            transition={{duration: 0.2}}
+          >
             <Projects />
           </motion.section>
         </TabsContent>
